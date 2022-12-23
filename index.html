@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">    </head>
+    <body>
+        <div class="container">
+            <h1> Book List </h1>
+            <form id="book-form">
+                <div class="form-group" id="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group" id="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <input id="myInput" type="submit" value="Search" class="btn">
+            </form>
+            <table class="table" id="table">
+                <thead>
+                    <tr id="myTr">
+                        <th>Author</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+        <script type= "module" src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+h1{
+    position: relative;
+    left: 40%;
+    font-family: 'Unbounded', cursive;
+    font-size: large;
+}
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    font-size: .9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead{
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+.table tbody tr{
+    border-bottom: 1px solid grey;
+}
+.table tbody tr:nth-last-of-type(even){
+    background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 5px solid green;
+}
+.table tbody tr:nth-child(even):hover{
+    background-color: rgb(139, 210, 149);
+    color: black;
+}
+.table tbody tr:nth-child(odd):hover{
+    background-color: rgb(139, 210, 149);
+    color: black;
+}
