@@ -4,8 +4,24 @@
         <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+    </head>
     <body>
+        <div class="header">
+                <div class="navbar">
+                    <div class="logo">
+                        <!-- Logo -->
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <nav class="top-navbar">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
         <div class="container">
             <h1> Book List </h1>
             <form id="book-form">
@@ -17,18 +33,39 @@
                     <label for="author">Author</label>
                     <input type="text" id="author" class="form-control">
                 </div>
-                <input id="myInput" type="submit" value="Search" class="btn">
+                <div class="form-group" id="form-group">
+                    <label for="author">Subject</label>
+                    <input type="text" id="subject" class="form-control">
+                </div>
+                <div class="form-group" id="form-group">
+                    <label for="author">Language</label>
+                    <input type="text" id="language" class="form-control">
+                </div>
+                <input id="myInput" type="submit" value="Add Book" class="btn">
             </form>
             <table class="table" id="table">
                 <thead>
                     <tr id="myTr">
-                        <th>Author</th>
                         <th>Title</th>
+                        <th>Author</th>
+                        <th>Subjects</th>
+                        <th>Language</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="book-list"></tbody>
             </table>
         </div>
-        <script type= "module" src="./js/index.js"></script>
+        <section class="bottom-header">
+            <div class="bottom-nav-links">
+                <ul>
+                    <li><a href="https://www.facebook.com/">FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/">INSTAGRAM</a></li>
+                    <li><a href="https://www.linkedin.com/">LINKEDIN</a></li>
+
+                </ul>
+            </div>
+    </section>
+        <script type= "module" src="./js/main.js"></script>
     </body>
 </html>
